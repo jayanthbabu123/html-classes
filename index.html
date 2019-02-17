@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Html practice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
+  <script src="sub.js"></script>
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <p id="demo">jayanth</p>
+  <button onClick="myFunction()">
+    click
+  </button>
+  <input type="text" value="jayanth" onchange="changeText(this.value)" />
+</body>
+
+</html>
+<script>
+
+ function changeText(value) {
+    document.getElementById('demo').innerText = value
+  }
+  function myFunction() {
+    document.getElementById('demo').innerText = data.getName()
+  }
+  class Animal {
+    constructor() {
+      this.age = 10;
+      this.name = "jayanth babu"
+    }
+
+    getName() {
+      return this.name
+    }
+    getAge() {
+      return this.age
+    }
+  }
+
+  class Car extends Animal{
+    constructor(){
+      super();
+      
+    }
+  }
+  var data1= new Car();
+  console.log(data1);
+  var data = new Animal()
+
+
+ 
+</script>
